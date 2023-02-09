@@ -1,12 +1,27 @@
 package com.java5.basics;
 
 public class Main {
-   static int x ;  // Global
+    static int x;  // Global
     static double ww;
-    static boolean bb ;
+    static boolean bb;
+
     public static void main(String[] args) {
 
+
+        int xy = 10; //32 bit
+
+        double yy = xy; // 64 bit
+
+        long ll = (int)yy; // LL = 64  , yy 64
+
+        byte bbb = (byte) yy; // 8  , yy 64
+
+        System.out.println(xy = xy + 3);
+        System.out.println(xy);
+
+        System.out.println(x);
         int xx = 1;
+
         System.out.println(xx);
         System.out.println(xx + 1);
         xx = xx + 1;
@@ -57,7 +72,6 @@ public class Main {
         //System.out.println((byte)zz);
 
 
-
         //int x, y;
 
        /* System.out.println(x);
@@ -66,8 +80,8 @@ public class Main {
 
         /*int x;
         System.out.println(x);*/
-       // int y; //Local
-       // y = 10;
+        // int y; //Local
+        // y = 10;
 
         int w = 50;
         //System.out.println(y);
@@ -111,8 +125,10 @@ public class Main {
         System.out.println("x =" + x);
 
     }
-    public void test(){
-       // System.out.println(y);
+
+    public void test() {
+        int xx = 0;
+        // System.out.println(y);
         System.out.println(x);
 
     }
