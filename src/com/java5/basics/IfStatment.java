@@ -5,20 +5,82 @@ import java.util.Scanner;
 public class IfStatment {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Plz enter Line ");
-        String line = scanner.nextLine();
+        System.out.println("plz enter num");
+        int mark = scanner.nextInt();
+        /*// البرنامج يبحث عن mark
+        switch (mark) {
+            case 1:
+                System.out.println("1");
+                break;
+            case 2:
+                System.out.println("2");
+                break;
+            case 3:
+                System.out.println("3");
+                break;
+            case 4:
+                System.out.println("4");
+                break;
+            case 5:
+                System.out.println("5");
+                break;
+            case 6:
+                System.out.println("6");
+                break;
+            default:
+                System.out.println("not correct to add " + mark);
+
+        }*/
+
+        /*if(mark==1){
+            System.out.println("1");
+        }else if(mark==2 || mark==3){
+            System.out.println("2 OR 3");
+        }else {
+            System.out.println(mark);
+        }*/
+
+        switch (mark) {
+            case 1:
+                System.out.println("1");
+                break;
+            case 2:
+            case 3:
+                System.out.println("2 Or 3");
+                break;
+            default:
+                System.out.println(mark);
+        }
+
+        /*if (mark == 1) {
+            System.out.println("1");
+        } else if (mark == 2) {
+            System.out.println("2");
+        } else if (mark == 3) {
+            System.out.println("3");
+        } else if (mark == 4) {
+            System.out.println("4");
+        } else if (mark == 5) {
+            System.out.println("5");
+        } else if (mark == 6) {
+            System.out.println("6");
+        }else {
+            System.out.println("not correct to add " + mark);
+        }*/
+        /*System.out.println("Plz enter Line ");
+        String line = scanner.nextLine();*/
       /*  if(line.isEmpty()){
             System.out.println("Line is empty");
             return;
         }
 */
-        if(!line.isEmpty()&& line.contains("https://")){
+       /* if(!line.isEmpty()&& line.contains("https://")){
             System.out.println("URL");
         }else if(!line.isEmpty() &&line.contains("@")){
             System.out.println("Email");
         }else {
             System.out.println("not email or URL");
-        }
+        }*/
         /*System.out.println("Plz enter mark ");
         int mark = scanner.nextInt();
 
