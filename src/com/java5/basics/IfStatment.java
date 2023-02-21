@@ -7,6 +7,7 @@ public class IfStatment {
         Scanner scanner = new Scanner(System.in);
         System.out.println("plz enter num");
         int mark = scanner.nextInt();
+
         /*// البرنامج يبحث عن mark
         switch (mark) {
             case 1:
@@ -51,7 +52,6 @@ public class IfStatment {
             default:
                 System.out.println(mark);
         }
-
         /*if (mark == 1) {
             System.out.println("1");
         } else if (mark == 2) {

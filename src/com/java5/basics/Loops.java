@@ -4,13 +4,71 @@ import java.util.Scanner;
 
 public class Loops {
     public static void main(String[] args) {
-        for(int i = 0  ; i<3;i++){
+
+        for(int i = 0 ; i <5 ; i++){
+            for (int j = 0 ; j<=i ; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+       /* for (int i = 1 ; i<=4 ; i++){
+            System.out.println("Week " + i );
+            for(int j = 1 ; j<=7 ; j++){
+                System.out.print("Day " + j + "  ");
+            }
+            System.out.println();
+        }*/
+
+
+        /*Scanner scanner = new Scanner(System.in);
+        for(;;){
+            System.out.println("Plz enter the num ");
+            int num = scanner.nextInt();
+            if(num==0){
+                System.out.println("App Stopped");
+                continue;
+            }
+            if(num%2==0){
+                System.out.println("Even");
+            }else {
+                System.out.println("Odd");
+            }
+
+        }*/
+
+       /* Scanner scanner = new Scanner(System.in);
+        System.out.println("Plz enter the num ");
+        int num = scanner.nextInt();
+        int fact = 1;
+        for(int i = 1 ; i <=num;  i++){
+            fact *= i;
+        }
+        System.out.println(fact);*/
+
+        /*int sum = 0;
+        for(int i = 0 ; i<=100 ; i++){
+            if(i%2==0){
+                sum += i;
+            }
+        }
+        System.out.println(sum);*/
+
+        /*for(int i = 1 ; i<10 ; i++){
+            if(i!=9){
+                System.out.print("1/" + i + "+");
+            }else {
+                System.out.print("1/" + i );
+            }
+        }
+*/
+        /*for(int i = 0  ; i<3;i++){
            for(int j = 0 ; j<3 ; j++){
                System.out.print("*");
            }
            System.out.println();
         }
-
+*/
         /*Scanner scanner = new Scanner(System.in);
         int num;
         int sum = 0;
