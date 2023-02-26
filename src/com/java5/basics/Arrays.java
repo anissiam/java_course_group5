@@ -4,7 +4,68 @@ import java.util.Scanner;
 
 public class Arrays {
     public static void main(String[] args) {
-        String[][] month = {{"Sat", "Sun" , "Mon" , "Tue" , "Wen" , "Thr","Fri"},
+
+        String[] names = {"ali", "sami" , "soso" , "ali"};
+        for (int i = 0; i < names.length; i++) {
+            if (i == names.length - 1) {
+                names[i] = "Hello world";
+            }
+        }
+
+        for (String ss:names){
+            System.out.println(ss);
+
+        }
+        /*for (int i = 0; i < names.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if(names[i].equals(names[j])){
+                    System.out.println(names[i]);
+
+                }
+            }
+        }*/
+        /*Scanner scanner = new Scanner(System.in);
+        int[] arr = new int[10];
+        int x = 1;
+        int sum = 0;
+        int max = 0;
+        int min = 0;
+
+        boolean s = true;
+        boolean vv = false;
+        System.out.println("search for:");
+        int value = scanner.nextInt();
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println("Plz enter value");
+            arr[i] = scanner.nextInt();
+            x = x * arr[i];
+            sum = sum + arr[i];
+            if (value == arr[i]) {
+                vv = true;
+            }
+            if (i==0) {
+                max = arr[i];
+                min = arr[i];
+                continue;
+            }
+            if(max<arr[i]){
+                max = arr[i];
+            }
+            if(min>arr[i]){
+                min = arr[i];
+            }
+
+        }
+        System.out.println("x " + x);
+        System.out.println("Sum " + sum);
+        System.out.println("Ava " + sum / arr.length);
+        System.out.println("Min " + min);
+        System.out.println("Max " + max);
+        System.out.println(value +" "+ vv);*/
+
+
+
+       /* String[][] month = {{"Sat", "Sun" , "Mon" , "Tue" , "Wen" , "Thr","Fri"},
                 {"Sat", "Sun" , "Mon" , "Tue" , "Wen" , "Thr","Fri"},
                 {"Sat", "Sun" , "Mon" , "Tue" , "Wen" , "Thr","Fri"},
                 {"Sat", "Sun" , "Mon" , "Tue" , "Wen" , "Thr","Fri"}};
@@ -17,7 +78,7 @@ public class Arrays {
                 System.out.print(month[i][j] +" ");
             }
             System.out.println();
-        }
+        }*/
         //int[][] arr = new int[4][4];
         /*int[][] arr = {{5,10,5}, {2,7,8, 5}, {9,7,3}};
         System.out.println(arr.length); // عدد الصفوف
