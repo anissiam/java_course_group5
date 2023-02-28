@@ -5,4 +5,11 @@ public class Person {
     double tall;
     int age;
 
+    public void printData(){
+        System.out.println("Name:" + name + " Age:" + age + " Tall:" +tall  );
+    }
+
+    public void printName(String name){
+        System.out.println(this.name);
+    }
 }
