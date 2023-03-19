@@ -12,14 +12,79 @@ public class Main {
         int c ;
 
         do {
-            System.out.println("1.Add Student\n2.Show Student by id\n3.Delete Student\n4.Exit");
+            System.out.println("==========================Main menu==========================");
+            System.out.println("1.Add Student\n2.Show Student by id\n3.Delete Student\n4.Show all\n5.Exit");
             c = scanner.nextInt();
             switch (c){
                 case 1:
                     addStudent();
                     break;
+                case 2:
+                    showStudent();
+                    break;
+                case 3:
+                    deleteStudent();
+                    break;
+                case 4:
+                    showAll();
+                    break;
+                default:
+                    break;
             }
-        } while (c < 4);
+        } while (c < 5);
+    }
+
+    private static void showAll() {
+        for (int i = 0; i < studentArray.length; i++) {
+            if(studentArray[i]!=null){
+                System.out.println(studentArray[i]);
+            }
+        }
+    }
+
+    private static void deleteStudent() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Plz enter id");
+        int id = scanner.nextInt();
+        if (studentArray[id]!=null){
+            studentArray[id] = null;
+            System.out.println("Student deleted");
+        }else {
+            System.out.println("Student not found");
+        }
+    }
+
+    private static void showStudent() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Plz enter id");
+        int id = scanner.nextInt();
+        if (studentArray[id]!=null){
+            Student student = studentArray[id];
+            System.out.println(student.toString());
+            int c=  scanner.nextInt();
+            System.out.println("1.Update\n2.Back");
+            scanner.nextLine();
+
+            switch (c){
+                case 1:
+                    update(scanner, student);
+                    break;
+                default:
+                    break;
+            }
+
+
+        }else {
+            System.out.println("Student not found");
+        }
+
+
+    }
+
+    private static void update(Scanner scanner, Student student) {
+        System.out.println("Plz enter new Name");
+        String name = scanner.nextLine();
+        student.setName(name);
     }
 
     private static void addStudent() {

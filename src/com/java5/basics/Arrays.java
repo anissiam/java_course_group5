@@ -4,8 +4,30 @@ import java.util.Scanner;
 
 public class Arrays {
     public static void main(String[] args) {
+        //bubble sort algorithm
+        int nums[] = {5, 7, 3, 1, 9};
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+        /*int temp = 0;
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] > nums[j]) {
+                    temp = nums[i];
+                    nums[i] = nums[j];
+                    nums[j] = temp;
+                }
+            }
+        }*/
 
-        String[] names = {"ali", "sami" , "soso" , "ali"};
+        java.util.Arrays.sort(nums);
+
+        System.out.println("====================================");
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+
+        /*String[] names = {"ali", "sami" , "soso" , "ali"};
         for (int i = 0; i < names.length; i++) {
             if (i == names.length - 1) {
                 names[i] = "Hello world";
@@ -15,7 +37,8 @@ public class Arrays {
         for (String ss:names){
             System.out.println(ss);
 
-        }
+        }*/
+
         /*for (int i = 0; i < names.length; i++) {
             for (int j = 0; j < i; j++) {
                 if(names[i].equals(names[j])){
@@ -171,6 +194,7 @@ public class Arrays {
             System.out.println("Plz enter name ");
             names[i] = scanner.next();
         }
+
         System.out.println("Enter the name ");
         String name = scanner.next();
         for (String ss : names) {
