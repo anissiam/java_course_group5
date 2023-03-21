@@ -10,7 +10,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        int nums[] = new int[5];
+
         try {
+            nums[5] = 30/0;
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println(e);
+        }catch (ArithmeticException e){
+            System.out.println(e);
+        }
+
+       /* try {
 
             System.out.println("Plz enter num");
             int num = scanner.nextInt(); // Throw
@@ -26,7 +36,7 @@ public class Main {
             System.out.println(e);
         }finally {
             System.out.println("Finally");
-        }
+        }*/
 
         System.out.println("Done");
 
