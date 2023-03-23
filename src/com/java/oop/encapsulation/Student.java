@@ -1,6 +1,11 @@
 package com.java.oop.encapsulation;
 
-public class Student {
+import java.io.Serial;
+import java.io.Serializable;
+
+public class Student implements Serializable {
+    /*@Serial
+    private static final long serialVersionUID = 652968509827757690L;*/
     private String name;
     private int age;
     private String major;
@@ -39,5 +44,14 @@ public class Student {
     }
     public void printData(){
         System.out.println("name" + name + "age" + age + " major" + major);
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", major='" + major + '\'' +
+                '}';
     }
 }
